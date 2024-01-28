@@ -15,6 +15,3 @@ void main() {
     ),
   );
 }
-
-// Custom Widgets
-

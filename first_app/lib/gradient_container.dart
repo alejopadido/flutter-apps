@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-//files
-import 'package:first_app/styled_text.dart';
+import 'package:first_app/dice_roller.dart';
 
 // variables
 const startAlignment = Alignment.topLeft;
@@ -11,6 +10,7 @@ class GradientContainer extends StatelessWidget {
       {super.key,
       required this.colors}); // By default, named arguments are optional, so you must use 'required'
 
+  // Variables
   final List<Color> colors;
 
   @override
@@ -23,8 +23,8 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: StyledText('Home Page'),
+      child: Center(
+        child: DiceRoller(),
       ),
     );
   }
