@@ -2,6 +2,7 @@ import 'package:expense_tracker/widgets/expenses_list/expenses_list.dart';
 import 'package:expense_tracker/widgets/new_expense.dart';
 import 'package:flutter/material.dart';
 import 'package:expense_tracker/models/expense.dart';
+import 'package:expense_tracker/widgets/chart/chart.dart';
 
 class Expenses extends StatefulWidget {
   const Expenses({super.key});
@@ -52,8 +53,8 @@ class _ExpensesState extends State<Expenses> {
     ScaffoldMessenger.of(context).clearSnackBars();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        duration: Duration(seconds: 3),
-        content: Text('Expense deleted.'),
+        duration: const Duration(seconds: 3),
+        content: const Text('Expense deleted.'),
         action: SnackBarAction(
             label: 'Undo',
             onPressed: () {
@@ -68,7 +69,10 @@ class _ExpensesState extends State<Expenses> {
   @override
   Widget build(BuildContext context) {
     Widget mainContent = const Center(
-      child: Text('No expenses found. Start adding some!'),
+      child: Text(
+        'No expenses found. Start adding some!',
+        style: TextStyle(fontSize: 18),
+      ),
     );
 
     if (_registeredExpenses.isNotEmpty) {
@@ -97,7 +101,7 @@ class _ExpensesState extends State<Expenses> {
       ),
       body: Column(
         children: [
-          const Text('The Chart'),
+          Chart(expenses: _registeredExpenses),
           Expanded(
             child: mainContent,
           ),
