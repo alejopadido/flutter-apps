@@ -1,16 +1,22 @@
-# expense_tracker
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Expense Tracker App
+## What is it for?
+Keeping track of your expenses
+## Features
+- Expense categories
+- Recording each expense by date
+- Deleting expenses
+- Chart comparing expenses in different categories
+## Flutter Knowledge Applied
+- App Theming
+- Enums
+- Modal Sheet
+- Scaffold Messenger
+- SnackBar
+- Getters
+- ListView
+- Storing user input with TextEditingController
+- Async functions
+- Show Dialogs
+## Screenshots
+![Captura de pantalla 2024-02-29 185425](https://github.com/alejopadido/flutter-apps/assets/68857284/1fd3969b-ea47-4b3d-a508-2b6076822b20)
+![Captura de pantalla 2024-02-29 185700](https://github.com/alejopadido/flutter-apps/assets/68857284/894d4c1a-88f8-4c8a-bd27-5bc9f6df9e6e)
