@@ -16,8 +16,8 @@ class MovieMapper {
         popularity: moviedb.popularity,
         posterPath: (moviedb.posterPath != '')
             ? 'https://image.tmdb.org/t/p/w500${moviedb.posterPath}'
-            : 'no-poster',
-        releaseDate: moviedb.releaseDate,
+            : 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftheposterdb.com%2Fimages%2Fdefaults%2Fmissing_poster.jpg&f=1&nofb=1&ipt=64e9e96a5697bbacc65ce6bb8b32bd0f6c0bd4646dfa97b90afca87d34703b0d&ipo=images',
+        releaseDate: moviedb.releaseDate ?? DateTime.now(),
         title: moviedb.title,
         video: moviedb.video,
         voteAverage: moviedb.voteAverage,
